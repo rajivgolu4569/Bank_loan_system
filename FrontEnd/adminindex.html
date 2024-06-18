@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        nav {
+            background-color: #051e33;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.704);
+            position: fixed;
+            width: 100vw;
+            top: 0;
+            z-index: 2;
+        }
+
+        nav h1 {
+            color: wheat;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 1em;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: blue;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            padding-top: 10%;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        a{
+            text-decoration: none;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .info {
+            margin-bottom: 20px;
+        }
+
+        .info p {
+            margin: 5px 0;
+        }
+
+        .info p strong {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>BLMS-client</h1>
+        <ul>
+            <li>
+                <a href="/cantact">conatact support</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Admin Dashboard</h1>
+    <div class="info">
+        <p><strong>Total Applications:</strong> 2</p>
+    </div>
+    <div class="container">
+        <h2>Loan Applications</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Application ID</th>
+                    <th>Applicant Name</th>
+                    <th>Loan Type</th>
+                    <th>Loan Amount</th>
+                    <th>Documents</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>vasisht</td>
+                    <td>Personal Loan</td>
+                    <td>$10,000</td>
+                    <td><a href="/FrontEnd/documents/1">view aadhar</a></td>
+                    <td><input type="checkbox" name="verified" id="verified">verified</td>
+                    <td><a href="/FrontEnd/documents/1">&#160; &#160;view pan &#160; </a></td>
+                    <td><input type="checkbox" name="verified" id="verified">verified</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>2</td>
+                    <td>venkat</td>
+                    <td>Car Loan</td>
+                    <td>$1,00,000</td>
+                    <td><a href="/FrontEnd/documents/1">view aadhar</a></td>
+                    <td><input type="checkbox" name="verified" id="verified">verified</td>
+                    <td><a href="/FrontEnd/documents/1">&#160; &#160;view pan &#160;</a></td>
+                    <td><input type="checkbox" name="verified" id="verified">verified</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

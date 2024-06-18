@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLMS-Admin-login</title>
+    <style>
+        nav {
+            background-color: #051e33;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.704);
+            position: fixed;
+            width: 100vw;
+            top: 0;
+            z-index: 2;
+        }
+
+        nav h1 {
+            color: wheat;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .logbox {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            max-width: 800px;
+            margin-top: 60px;
+        }
+
+        .logbox form,
+        .logbox > div {
+            flex: 1;
+        }
+
+        .logbox form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-right: 10px;
+        }
+
+        .logbox form input[type="text"],
+        .logbox form input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 50%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .logbox > div {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>BLMS</h1>
+    </nav>
+    <div class="logbox">
+        <form id="loginForm">
+            <h2>Login-admin</h2>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+            <div>lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nemo ex qui voluptates pariatur unde similique possimus officia quod blanditiis esse accusantium, sed tempore numquam omnis voluptate. Corrupti, pariatur unde.</div>
+        </form>
+        
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+     
+            window.location.href = '/FrontEnd/adminindex.html';
+        });
+    </script>
+</body>
+
+</html>
